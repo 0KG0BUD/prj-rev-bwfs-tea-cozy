@@ -1,0 +1,171 @@
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+h5 {
+  font-weight: normal;
+}
+/*
+div {
+  border: 1px solid white;
+}
+*/
+/* Header styling */
+header {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  height: 69px;
+  margin-top: 0px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.logo img {
+  width: auto;
+  height: 50px;
+}
+
+header nav {
+  padding-right: 40px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+  text-decoration: underline;
+}
+
+/* Content flex container is the main section - blocks in it ... One big flex box with 4 larger blocks underneath */
+
+.content {
+  display: flex;
+  padding-top: 69px;
+  width: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* #1 - - - Mission block is the first medium flex block in flex container */
+.mission_block {
+  display: flex;
+  align-items: center;
+  height: 700px;
+  width: 1200px;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+}
+
+.mission_content {
+  display: block;
+  background-color: black;
+  width: 1200px;
+  height: 130px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+/* #2 - - - teaofmonth is main flex container (But inside content flex container...)*/
+.teaofmonth {
+  display: flex;
+  width: 1000px;
+  flex-wrap: wrap;
+  /*flex-direction: row;*/
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+/* #2 - - - The top block in the second section - goes full width of teaofmonth container */
+.TOMTextBlock {
+  display: block;
+  width: 100%;
+  height: 130px;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+}
+
+.one_of_five {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 12px;
+}
+
+.one_of_five h4 {
+  margin: 10px 0px;
+}
+
+/* #3 - - - Locations block .... Directly inside main content flex-container */
+.locations {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  height: 500px;
+  width: 1200px;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  justify-content: center;
+}
+/* Inside locations flex-container - First block - stretches whole way along the top*/
+.location_text {
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Inside locations flex-container*/
+.black_block {
+  display: block;
+  background-color: black;
+  height: 250px;
+  width: 300px;
+  text-align: center;
+  margin: auto 20px 100% 20px;
+  opacity: 1; /* Don't think this is working for some reason */
+}
+
+/* #4 in the main blocks under the main Content container - Contact section*/
+.contactcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 200px;
+}
+
+.contactbox {
+  display: block;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+/*   Footer time */
+
+.footertext {
+  padding-left: 20px;
+}
